@@ -7,18 +7,22 @@ header {
 	display: flex;
 }
 
-header nav ul {
-	list-style: none;
+header nav {
 	padding: 0;
-	margin: 10px;
+	margin: 2px;
+	display: flex;
+}
+
+header nav ul {
 	display: flex;
 }
 
 header nav li {
+	list-style: none;
 	margin-right: 40px;
 }
 
  header img {
  	position: margin-right;
- 	margin-top: 10px;
+ 	margin: 10px;
  }
