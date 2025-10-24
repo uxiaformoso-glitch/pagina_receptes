@@ -1,0 +1,24 @@
+header {
+	position: sticky;
+	top: 0;
+	background-color: #FEEBE7;
+	justify-content: space-between;
+	z-index: 100%;
+	display: flex;
+}
+
+header nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 10px;
+	display: flex;
+}
+
+header nav li {
+	margin-right: 40px;
+}
+
+ header img {
+ 	position: margin-right;
+ 	margin-top: 10px;
+ }
