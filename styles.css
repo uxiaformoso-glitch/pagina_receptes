@@ -2,27 +2,55 @@ header {
 	position: sticky;
 	top: 0;
 	background-color: #FEEBE7;
+	border-style: outset;
 	justify-content: space-between;
 	z-index: 100%;
 	display: flex;
 }
-
 header nav {
 	padding: 0;
 	margin: 2px;
 	display: flex;
 }
-
 header nav ul {
 	display: flex;
 }
-
 header nav li {
 	list-style: none;
 	margin-right: 40px;
 }
-
- header img {
+header img {
  	position: margin-right;
  	margin: 10px;
  }
+.seccionTitulo {
+	background-color: #FFFAF0;
+	height: 350px;
+	
+}
+.seccionTitulo table{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 350px;
+}
+.healthy {
+	font-size: 14px;
+	margin-bottom: 0;
+	width: 340px;
+}
+table h1 {
+	font-size: 45px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.verReceta {
+	height: 25px;
+	font-size: 11px;
+	color: #FA8072;
+	border: 1px;
+	border-style: solid;
+	border-radius: 62px;
+	text-align: center;
+	margin-top: 10px;
+}
