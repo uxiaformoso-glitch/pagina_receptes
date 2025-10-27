@@ -1,3 +1,7 @@
+body {
+
+}
+
 header {
 	position: sticky;
 	top: 0;
@@ -7,45 +11,62 @@ header {
 	z-index: 100%;
 	display: flex;
 }
+
 header nav {
 	padding: 0;
 	margin: 2px;
 	display: flex;
 }
+
 header nav ul {
 	display: flex;
 }
+
 header nav li {
 	list-style: none;
 	margin-right: 40px;
 }
+
 header img {
  	position: margin-right;
  	margin: 10px;
  }
+
 .seccionTitulo {
 	background-color: #FFFAF0;
 	height: 350px;
-	
-}
-.seccionTitulo table{
-	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 350px;
+	display: flex;
 }
+
+.seccionTitulo ul {
+	list-style: none;
+	margin-right: 100px;
+}
+
 .healthy {
 	font-size: 14px;
 	margin-bottom: 0;
 	width: 340px;
 }
-table h1 {
+
+h1 {
 	font-size: 45px;
 	margin-top: 0;
 	margin-bottom: 0;
 }
+
+.seccionTitulo h2 {
+	font-size: 45px;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-weight: normal;
+}
+
 .verReceta {
-	height: 25px;
+	height: 30px;
+	width: 90px;
 	font-size: 11px;
 	color: #FA8072;
 	border: 1px;
@@ -53,4 +74,26 @@ table h1 {
 	border-radius: 62px;
 	text-align: center;
 	margin-top: 10px;
+}
+
+.categorias {
+	display: flex;
+	height: 60px;
+	border-style: ridge;
+}
+
+.categorias h4 {
+	color: lightgrey;
+	font-weight: normal;
+	margin-left: 60px;
+}
+
+.categorias ul {
+	display: flex;
+	list-style: none;
+}
+
+.categorias li {
+	margin-right: 35px;
+	font-weight: bold;
 }
