@@ -32,8 +32,15 @@ header img {
  	margin: 10px;
  }
 
-.seccionTitulo {
+
+.encabezado {
+	border-style: ridge;
+	padding-top: 0;
 	background-color: #FFFAF0;
+	overflow: hidden;
+}
+
+.seccionTitulo {
 	height: 350px;
 	justify-content: center;
 	align-items: center;
@@ -47,8 +54,9 @@ header img {
 
 .healthy {
 	font-size: 14px;
-	margin-bottom: 0;
+	margin: 0;
 	width: 340px;
+	display: flex;
 }
 
 h1 {
@@ -69,8 +77,7 @@ h1 {
 	width: 90px;
 	font-size: 11px;
 	color: #FA8072;
-	border: 1px;
-	border-style: solid;
+	border: 1px solid;
 	border-radius: 62px;
 	text-align: center;
 	margin-top: 10px;
@@ -78,22 +85,23 @@ h1 {
 
 .categorias {
 	display: flex;
-	height: 60px;
-	border-style: ridge;
+	height: 50px;
+	background-color: white;
+	align-items: center;
 }
 
 .categorias h4 {
-	color: lightgrey;
+	color: grey;
 	font-weight: normal;
 	margin-left: 60px;
 }
 
-.categorias ul {
-	display: flex;
+.categorias ul{
 	list-style: none;
+	display: flex;
 }
 
-.categorias li {
-	margin-right: 35px;
+.categorias li{
+	margin-right: 25px;
 	font-weight: bold;
 }
