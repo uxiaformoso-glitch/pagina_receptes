@@ -1,5 +1,67 @@
 body {
+	margin: 0;
+	padding: 0;
+}
 
+h1 {
+	font-size: 45px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+h2 {
+	font-size: 45px;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-weight: normal;
+}
+
+h3 {
+	font-size: 35px;
+	font-weight: 500;
+}
+
+h4 {
+	font-size: 25px;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-weight: 500;
+}
+
+h6 {
+	font-size: 14px;
+	margin: 0;
+	display: flex;
+}
+
+span {
+	color: grey;
+	font-weight: normal;
+	margin-left: 60px;
+}
+
+ul {
+	list-style: none;
+}
+
+.indice {
+	display: flex;
+}
+
+.indice li {
+	margin-right: 40px;
+}
+
+.botonReceta {
+	height: 30px;
+	width: 90px;
+	background-color: whitesmoke;
+	font-size: 11px;
+	color: #FA8072;
+	border: 1px solid;
+	border-radius: 62px;
+	text-align: center;
+	margin-top: 10px;
 }
 
 header {
@@ -8,7 +70,7 @@ header {
 	background-color: #FEEBE7;
 	border-style: outset;
 	justify-content: space-between;
-	z-index: 100%;
+	z-index: 2;
 	display: flex;
 }
 
@@ -18,29 +80,26 @@ header nav {
 	display: flex;
 }
 
-header nav ul {
-	display: flex;
-}
-
-header nav li {
-	list-style: none;
-	margin-right: 40px;
-}
-
 header img {
  	position: margin-right;
  	margin: 10px;
  }
 
-
-.encabezado {
+.seccionTitulo {
 	border-style: ridge;
-	padding-top: 0;
-	background-color: #FFFAF0;
+	padding: 0;
 	overflow: hidden;
+	background-image: linear-gradient(
+		0deg,
+		rgba(250, 250, 250, 0.5),
+		rgba(250, 250, 250, 0.5)
+	)
+	,url("Img/imagenTitulo.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-.seccionTitulo {
+.seccionTitulo section {
 	height: 350px;
 	justify-content: center;
 	align-items: center;
@@ -48,39 +107,7 @@ header img {
 }
 
 .seccionTitulo ul {
-	list-style: none;
 	margin-right: 100px;
-}
-
-.healthy {
-	font-size: 14px;
-	margin: 0;
-	width: 340px;
-	display: flex;
-}
-
-h1 {
-	font-size: 45px;
-	margin-top: 0;
-	margin-bottom: 0;
-}
-
-.seccionTitulo h2 {
-	font-size: 45px;
-	margin-top: 0;
-	margin-bottom: 0;
-	font-weight: normal;
-}
-
-.verReceta {
-	height: 30px;
-	width: 90px;
-	font-size: 11px;
-	color: #FA8072;
-	border: 1px solid;
-	border-radius: 62px;
-	text-align: center;
-	margin-top: 10px;
 }
 
 .categorias {
@@ -89,19 +116,146 @@ h1 {
 	background-color: white;
 	align-items: center;
 }
-
-.categorias h4 {
-	color: grey;
-	font-weight: normal;
-	margin-left: 60px;
-}
-
 .categorias ul{
-	list-style: none;
 	display: flex;
 }
 
 .categorias li{
 	margin-right: 25px;
 	font-weight: bold;
+}
+
+.body {
+	padding-left: 90px;
+	padding-right: 90px;
+}
+
+.ultimasRecetas section{
+	display: flex;
+	justify-content: center;
+}
+
+.ultimasRecetas div {
+	width: 500px;
+	padding: 20px;
+
+}
+
+.ultimasRecetas img {
+	width: 500px;
+}
+
+.ultimasRecetas p {
+	text-align: justify;
+	font-size: 12px;
+}
+
+.suscripcion {
+	margin-top: 40px;
+	background-color: #E9967A;
+	border-radius: 25px;
+	display: flex;
+	height: 150px;
+	align-items: center;
+	justify-content: center;
+	width: 900px;
+	
+}
+
+.suscripcion section {
+	margin: 45px;
+	width: 300px;
+}
+
+.email {
+	display: flex;
+}
+
+.suscripcion input {
+	height: 20px;
+	width: 210px;
+	border: 2px solid;
+	border-radius: 62px;
+	border-color: #FDF5E6;
+}
+
+.suscripcion button {
+	height: 24px;
+	width: 90px;
+	background-color: #FDF5E6;
+	border: 1px solid;
+	border-color: #FDF5E6;
+	border-radius: 62px;
+}
+
+.recetasPopulares {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 10px;
+	gap: 1em;
+}
+
+.receta {
+	position: relative;
+	display: inline-block;
+	margin: 10px;
+}
+
+.receta img {
+	width: 450px;
+	height: auto;
+}
+
+.receta section {
+	width: 400px;
+	position: absolute;
+	top: 85%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(250, 250, 250, 0.5);
+	padding: 5px;
+}
+
+.sobreAutor {
+	background-color: #D2B48C;
+	display: flex;
+	height: 280px;
+	align-items: center;
+	justify-content: center;
+}
+
+.sobreAutor img {
+	height: 180px;
+	margin-right: 80px;
+	margin-left: 80px;
+}
+
+.sobreAutor ul {
+	list-style: none;
+	width: 750px;
+	padding: 0;
+}
+
+.redes {
+	background-color: #F5DEB3;
+}
+
+.logoIpsum {
+	margin: 10px;
+}
+
+.redes section {
+	display: flex;
+}
+
+.redesSociales {
+	display: flex;
+	margin-left: auto;
+	width: fit-content;
+}
+
+.redesSociales img {
+	height: 25px;
+	margin-right: 15px;
 }
